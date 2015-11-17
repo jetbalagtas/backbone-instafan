@@ -12,8 +12,7 @@ $(document).ready(function () {
   };
   var pic = new PictureModel(photoSubmitted);
   pic.save();
-  $('.thumbnail').prepend('<img src=' + pic.get('imgUrl') + '>');
-  $('.caption').prepend('<h4>' + pic.get('comment') + '</h4><p><a href=' + "#" + 'class=' + "btn btn-primary" + 'role=' + "button" + '>' + "Like" + '</a> <a href=' + "#" + 'class=' + "btn btn-default" + 'role=' + "button" + '>' + "Dislike" + '</a></p>');
+  $('.thumbnail').prepend('<img src=' + pic.get('imgUrl') + '><h4>' + pic.get('comment') + '</h4><p><a href=' + "#" + 'class=' + "btn btn-primary" + 'role=' + "button" + '>' + "Like" + '</a> <a href=' + "#" + 'class=' + "btn btn-default" + 'role=' + "button" + '>' + "Dislike" + '</a></p>');
 });
 
 });
